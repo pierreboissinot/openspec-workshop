@@ -1,0 +1,29 @@
+schema: spec-driven
+
+# Contexte projet — fourni à l'agent quand il rédige les artefacts.
+context: |
+  Projet : "openspec-workshop", un terrain de jeu pour la prise en main d'OpenSpec
+  (workshop Agile Nantes). Le code applicatif est volontairement minimal : ce qui
+  compte, c'est le workflow de spécification, pas la richesse de l'app.
+
+  Stack : JavaScript (ESM, Node.js >= 18), aucune dépendance runtime.
+  Tests : node:test intégré — `npm test`, fichiers dans test/*.test.js.
+  Code applicatif : src/todo.js — une todo-list en mémoire exposant
+    addTask, listTasks, completeTask, removeTask, reset.
+
+  Conventions :
+  - Rester simple : pas de dépendance externe, pas de framework.
+  - Toute modification de comportement s'accompagne de tests node:test.
+  - Messages d'erreur explicites et déterministes.
+
+# Règles par artefact.
+rules:
+  proposal:
+    - Garder le proposal court (< 400 mots) et centré sur le "pourquoi".
+    - Toujours inclure une section "Non-goals".
+  specs:
+    - Suivre le format de scénario du schéma (`#### Scenario:` avec puces `**WHEN**` / `**THEN**`) ; un `**GIVEN**` initial est optionnel.
+    - Rendre les scénarios testables et déterministes ; expliciter le comportement par défaut et les cas d'erreur.
+  tasks:
+    - Découper en tâches de 30 min à 2 h maximum, dans l'ordre d'implémentation.
+    - Inclure au moins une tâche de tests.

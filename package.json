@@ -1,0 +1,10 @@
+{
+  "name": "openspec-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Terrain de jeu OpenSpec — workshop Agile Nantes",
+  "scripts": {
+    "test": "node --test"
+  }
+}
