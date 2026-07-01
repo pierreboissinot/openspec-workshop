@@ -139,9 +139,9 @@ versionnée avec le code, lisible par un humain **et** par le prochain agent.
 
 ---
 
-## Questions à se poser (pour clarifier le besoin)
+## Questions à poser au PO (pour clarifier le besoin)
 
-Si votre agent ne les pose pas, **posez-les-lui** — c'est tout l'exercice :
+Si votre agent ne les pose pas, questionner le métier et reporter les réponses à l'agent — c'est tout l'exercice :
 
 - Combien de niveaux d'importance ? (haute/moyenne/basse ? un nombre ?)
 - Quel est le niveau **par défaut** quand on ne précise rien ?
